@@ -199,12 +199,12 @@
 }
 
 /* 오버시 */
-.more-list-area .card-wrap:hover .card {
+.more-list-area li:hover .card-wrap .card {
   width: 100%;
   box-shadow: 0 0 10px #a93bfa;
 }
 
-.more-list-area .card-wrap:hover {
+.more-list-area li:hover .card-wrap {
   transform: rotateY(180deg);
 }
 
