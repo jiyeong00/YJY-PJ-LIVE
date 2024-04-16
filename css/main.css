@@ -1,0 +1,508 @@
+@charset "utf-8";
+/* 메인페이지 CSS - main.css */
+
+/* 리셋, 코아, 커먼 공통 외부CSS 합치기 */
+@import url(./reset.css);
+@import url(./core.css);
+@import url(./common.css);
+/* 그리드 12 불러오기 */
+@import url(./grid_12_flex.css);
+
+/********************************** 공통 **********************************/
+body>*{
+  overflow:  hidden;
+}
+
+/* 메인 공용 원 */
+.cir {
+  position: absolute;
+  /* 중앙정렬 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(to bottom, #55555838, #171718a3);
+  /* background-color: #c8c8ce11; */
+
+  border-radius: 50%;
+  animation: cir-ani 4s ease-in-out  infinite alternate;
+}
+@keyframes cir-ani {
+  0%{
+    width: 550px;
+    height: 550px;
+  }
+  30%{
+    width: 500px;
+    height: 500px;
+  }
+  60%{
+    width: 600px;
+    height: 600px;
+  }
+  100%{
+    width: 500px;
+    height: 500px;
+
+  }
+  
+}
+
+.top-btn{
+  opacity: 0;
+}
+/* 메인 좌우 넘기기 버튼 */
+.pass-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 47px;
+  gap: 0 20px;
+}
+.pass-btn button{
+  cursor: pointer;
+}
+#msc-more-btn,
+#exh-more-btn {
+  font-size: 2rem;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 4px;
+}
+.main-btn {
+  font-size: 4rem;
+  color: #c8c8ce;
+  background-color: #ffffff00;
+  border: none;
+}
+.main-btn:hover {
+  color: #b559fb;
+}
+.more-btn{
+  font-weight: bold;
+}
+
+.cont {
+  width: 100%;
+  height: 100vh;
+}
+
+/************************************* 상단메뉴 *************************************/
+/* 공통 CSS : common.css에 넣음 */
+
+/************************************* 메인영역 *************************************/
+
+.back-title dt:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 10vh;
+  color: rgba(255, 255, 255, 0.031);
+  letter-spacing: 5vw;
+  font-family: "Black Han Sans", sans-serif;
+}
+.back-title dt:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 10vh;
+  color: rgba(255, 255, 255, 0.031);
+  letter-spacing: 5vw;
+  font-family: "Black Han Sans", sans-serif;
+  transform: scale(-1);
+}
+
+.main-tit-area {
+  width: 100vw;
+  height: 100%;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: center;
+
+  padding: 0 100px;
+  float: left;
+}
+/* 메인 타이틀 */
+.main-tit dt {
+  cursor: pointer;
+
+  position: relative;
+  /* left: 0; */
+
+  color: #bebec4;
+  /* font-size: 74px; */
+  font-size: max(min(10vw, 70px), 6vw);
+  font-family: "Gmarket Sans";
+}
+.main-tit dt b{
+  position: absolute;
+  top: -41px;
+  left: -123px;
+  font-weight: normal;
+  font-family: "Libre Baskerville", serif;
+  transform: rotate(344deg);
+  font-size: max(min(12vw, 70px), 8vw);
+}
+.main-tit dt:nth-child(1) {
+  /* left: -20%; */
+  /* left: -5%; */
+  left: 0%;
+  opacity: 0;
+  animation: main-tit-ani1 2s ease-in-out forwards;
+}
+.main-tit dt:nth-child(2) {
+  /* left: -30%; */
+  left: 20%;
+  opacity: 0;
+  animation: main-tit-ani2 2s ease-in-out 0.5s forwards;
+}
+.main-tit dt:nth-child(2) span{
+  font-style: italic;
+}
+
+/* 서브타이틀 */
+.main-tit dd {
+  position: relative;
+  left: 0;
+  opacity: 0;
+  /* left: -25%; */
+
+  /* color: #707075; */
+  color: white;
+  font-size: max(min(2.5vw, 35px), 1.5vw);
+  font-weight: bold;
+  letter-spacing: 1.2rem;
+  font-family: "Noto Sans KR", sans-serif;
+
+  animation: sub-tit-ani 2s ease-in-out 0.8s forwards;
+}
+
+@keyframes main-tit-ani1 {
+  0% {
+    left: 0%;
+    opacity: 0;
+  }
+  50% {
+    left: 0%;
+    opacity: 1;
+  }
+  100% {
+    left: -45%;
+    opacity: 1;
+  }
+}
+@keyframes main-tit-ani2 {
+  0% {
+    left: 20%;
+    opacity: 0;
+  }
+  50% {
+    left: 20%;
+    opacity: 1;
+  }
+  100% {
+    /* left: 0%; */
+    left: -20%;
+    opacity: 1;
+  }
+}
+@keyframes sub-tit-ani {
+  to {
+    /* left: 0%; */
+    left: -48%;
+    opacity: 1;
+  }
+}
+
+.main-tit-area .screen {
+  /* outline: 2px dashed red; */
+  /*  */
+  position: absolute;
+  right: 5px;
+  width: 100%;
+  height: 100%;
+  margin-left: 5%;
+  filter: sepia(1);
+}
+.screen .ifr {
+  position: absolute;
+  border: none;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  opacity: 0;
+}
+
+/* 메인 이미지 */
+/* .main-img-part {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 50%;
+  height: 100%;
+}
+
+.main-tit-img {
+  position: absolute;
+  left: 50%;
+  top: 49%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+
+  text-align: center;
+  width: max(35vw, 300px);
+
+  animation: img-ani 2.5s linear 0.8s infinite alternate,
+    img-ani2 2.5s linear 1.5s forwards;
+}
+.main-img-part img {
+  width: 100%;
+  transform: scaleX(-1);
+}
+
+@keyframes img-ani {
+  to {
+    top: 51%;
+  }
+}
+@keyframes img-ani2 {
+  to {
+    opacity: 1;
+  }
+} */
+
+/* 메인 이미지 */
+.main-img-part {
+  position: absolute;
+  top: 0;
+  right: 20px;
+
+  width: 50%;
+  height: 100%;
+}
+
+.main-tit-img {
+  position: absolute;
+  top: 52%;
+  transform: translateY(-50%);
+  opacity: 0;
+
+  text-align: center;
+  /* animation: img-ani 2.5s linear 0.8s infinite alternate,
+  img-ani2 2.5s linear 1.5s forwards; */
+  animation: img-ani2 2.5s linear 1.5s forwards;
+}
+
+.main-img-part img {
+  width: 250px;
+  border-radius: 20px;
+}
+.main-img-part img:nth-child(1) {
+  position: relative;
+  /* transform: rotate(349deg); */
+  transform: rotate(0deg);
+  left: 33px;
+  box-shadow: 0 0 20px black;
+  animation: img-ani3 .5s ease-out 1.5s forwards;
+}
+.main-img-part img:nth-child(2) {
+  position: relative;
+  /* transform: rotate(4deg); */
+  transform: rotate(0deg);
+  box-shadow: 0 0 20px black;
+  animation: img-ani4 .5s ease-out 1.5s forwards;
+  top: -50px;
+}
+.main-img-part img:nth-child(3) {
+  position: relative;
+  /* transform: rotate(349deg); */
+  transform: rotate(0deg);
+  box-shadow: 0 0 20px black;
+  animation: img-ani5 .5s ease-out 1.5s forwards;
+  right: 20px;
+}
+.main-img-part img:nth-child(4) {
+  position: relative;
+  /* transform: rotate(349deg); */
+  transform: rotate(0deg);
+  box-shadow: 0 0 20px black;
+  animation: img-ani5 .5s ease-out 1.5s forwards;
+  left: -5px;
+  top: -40px;
+
+}
+.main-img-part img:nth-child(5) {
+  position: relative;
+  /* transform: rotate(14deg); */
+  transform: rotate(0deg);
+  box-shadow: 0 0 20px black;
+  animation: img-ani4 1s ease-out 1.5s forwards;
+  top: -40px;
+  right: 17px;
+}
+
+/* @keyframes img-ani {
+  to {
+    top: 51%;
+  }
+} */
+@keyframes img-ani2 {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes img-ani3 {
+  to {
+    transform: rotate(-15deg);
+  }
+}
+@keyframes img-ani4 {
+  to {
+    transform: rotate(14deg);
+  }
+}
+@keyframes img-ani5 {
+  to {
+    transform: rotate(-5deg);
+  }
+}
+
+/************************************* 뮤지컬영역 *************************************/
+#msc-area,
+#exh-area {
+  /* 부모자격 - 뮤지컬 리스트 */
+  position: relative;
+}
+.ME-part {
+  position: relative;
+  top: calc(50% + 32px);
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 1400px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.ME-part h1 {
+  text-align: center;
+  font-size: max(50px, 6vw);
+  background-image: linear-gradient(to bottom, #c373ff, #650ba7);
+  color: transparent;
+  background-clip: text;
+
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.ME-part .slideShow {
+  padding: 50px 0;
+  height: 50%;
+  overflow: hidden;
+}
+
+/* 포스터 리스트 영역 - msc-list */
+.core-list {
+  position: relative;
+  left: 0px;
+  /* transform: translateX(-384px); */
+  /* transform: translateX(-75px); */
+
+  display: flex;
+  justify-content: center;
+
+  font-family: "Noto Sans KR", sans-serif;
+  z-index: 1;
+
+  transition: 1s ease-out;
+  padding: 24px 0;
+}
+
+.msc-list li,
+.exh-list li {
+  position: relative;
+
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  margin: 0 30px;
+  transition: transform 1s, filter 1s;
+  /* filter: grayscale(.8); */
+  opacity: 0.9;
+}
+
+.msc-list li.on,
+.exh-list li.on {
+  transform: scale(1.2);
+
+  /* filter: grayscale(0) */
+  opacity: 1;
+}
+
+/* .msc-list dl, .exh-list dl{
+  display: none;
+} */
+
+.msc-list img,
+.exh-list img {
+  border-radius: 5%;
+  width: 250px;
+}
+
+/* ---------백이미지 박스-------------- */
+.sub-back-img img {
+  position: absolute;
+  top: 0;
+  max-height: 0px;
+
+  width: 30rem;
+  /* width: 15vw; */
+  /* z-index: 1; */
+  transition: 0.5s ease-out;
+  filter: grayscale(0.8);
+}
+
+/* ---------이미지리스트 제목 및 장소, 날짜-------------- */
+/* 이미지 리스트 제목 및 장소 */
+#msc-area dt,
+#exh-area dt {
+  font-weight: bold;
+  color: #c373ff;
+  font-size: 1.7rem;
+}
+/* 메인 포스터 제목 및 장소 말줄임표 */
+.ME-part dt,
+dd {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  color: white;
+}
+
+.ME-part dd {
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+.ME-part dd:last-child {
+  font-weight: weight;
+  font-size: 1.3rem;
+}
+.ME-part dl {
+  opacity: 0;
+  transition: 1s;
+}
+.ME-part dl.on {
+  opacity: 1;
+}
+
+/************************************* 전시회영역 *************************************/

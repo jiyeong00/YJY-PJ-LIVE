@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/* 도깨비 PJ : 공통 모듈 CSS - common.css */
+/* 공유기능 요소 셋팅 */
+
+/* 공사중 표시 */
+/* body * {
+  outline: 2px dashed #424242;
+} */
+
+
+/************* 1. 상단영역 *************/
+/* 상단메뉴 */
+  .menu{
+    position: fixed;
+    top: 32px;
+    z-index: 2;
+  }
+  .menu li {
+    display: inline-block;
+    width: 160px;
+    height: 70px;
+    font-size: 25px;
+    text-align: center;
+    font-family: "Black Han Sans", sans-serif;
+  }
+  
+  .menu a {
+    position: relative;
+    text-decoration: none;
+    /* color: #b559fb; */
+    color: #c8c8ce71;
+  }
+  .menu li a::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    /* 마우스 나갈때 margin-left값 밀기 */
+    margin-left: 100%;
+    width: 0%;
+    height: 2px;
+  
+    background-color: #b559fb;
+    /* 아웃시 트랜지션 */
+    transition: 0.3s;
+  }
+  .menu li:hover a::after{
+    margin-left: 0;
+    width: 100%;
+    /* 오버시 트랜지션 ->> margin-left는 트랜지션 적용XXX */
+    transition: width 0.3s;
+  }
+  
+  .menu li:hover a, .menu a.on {
+    text-decoration: none;
+    color: #b559fb;
+  }
+
+
+
+  /* 탑버튼 */
+.top-btn img{
+  position: fixed;
+  bottom: 3vw;
+  right: 3vw;
+  
+  width: 80px;
+  z-index: 2;
+}
+/* .top-btn img.on{
+  opacity: 1;
+
+} */
+
+/************ 2. 메인영역 ************/
+/************* 3. 하단영역 *************/

@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/* 리셋, 코아, 커먼 공통 외부CSS 합치기 */
+@import url(./reset.css);
+@import url(./core.css);
+@import url(./common.css);
+/* 그리드 12 불러오기 */
+@import url(./grid_12_flex.css);
+
+body * {
+  /* outline: 2px dashed red; */
+}
+body {
+  box-sizing: border-box;
+  padding: 0 10rem;
+  overflow-x: hidden;
+}
+
+
+/* 뒤로 이동 */
+
+.top-btn img{
+transform: rotate(-90deg);
+}
+.top-btn img:hover{
+  right: 4vw;
+  transition: .1s ease-out;
+}
+/********************* <!-- 정보페이지 --> *********************/
+.info {
+  position: relative;
+  color: white;
+  padding: 10rem;
+
+
+}
+.info h1 {
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: normal;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.info table {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 3rem;
+  width: 75%;
+}
+.info th {
+  text-align: left;
+  color: #b559fb;
+}
+.simple-info tr:last-child td:hover {
+  cursor: pointer;
+  color: #a93bfa;
+  text-decoration: underline;
+}
+.info td {
+  font-size: 2rem;
+}
+.info .map {
+  width: 100%;
+  height: 30rem;
+  margin-top: 25px;
+}
+.info .map > iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* 이미지 공통 */
+.poster {
+  text-align: center;
+  line-height: 100vh;
+}
+.poster img {
+  width: 50rem;
+  aspect-ratio: 3 / 4;
+  vertical-align: middle;
+}
+
+/************************** 홍보페이지 **************************/
+.story-page{
+  position: relative;
+  height: 1000px;
+
+}
+.story-page-inbox2{
+  position: absolute;
+  top: 45%;
+  /* padding-top: 20%; */
+  left: 100%;
+  width: 0%;
+  height: 100vh;
+}
+
+.rep-cont {
+  width: 100%;
+  /* p박스 부모자격 */
+  padding: 5rem;
+  color: white;
+  font-family: "Noto Sans KR", sans-serif;
+  overflow: hidden;
+}
+.rep-cont .rep-p {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  font-size: 1.8rem;
+
+  width: 640px;
+  height: 563px;
+}
+.story-page-inbox2 .rep-cont p{
+  line-height: 43px;
+  height: 563px;
+}
+.rep-cont strong {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+/************************** 인트로영상 **************************/
+/* .video-page{
+  position: relative;
+}
+.video-page iframe{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.intro-mv-box{
+  position: relative;
+  top: 15rem;
+}
+
+/* 인트로 동영상 박스 */
+.intro-mv-img{
+  position: relative;
+  /* 부모자격 */
+  aspect-ratio: 2/1.1;
+}
+/* 가상요소로 플레이버튼 만들기 
+-> .off를 준 경우에만 가상요소 버튼 보임 
+따라서 비디오 태그를 넣을 경우 .off를 지울 것
+*/
+
+.intro-mv-img.off::after{
+  content: '';
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  background: url(../img/icon_play.png) no-repeat;
+  cursor: pointer;
+}
+
+/* 하위 이미지/동영상 */
+.intro-mv-img img,
+.intro-mv-img iframe{
+  position: relative;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 65%;
+  height: 65%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+/* 동영상 설명박스 */
+.intro-mv-box figcaption{
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.108);
+  text-align: center;
+  padding-top: 23px;
+  margin-bottom: 25%;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.intro-mv-box h2{
+  position: relative;
+  top: 23rem;
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}

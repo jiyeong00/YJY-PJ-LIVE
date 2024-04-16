@@ -1,0 +1,262 @@
+  @charset "utf-8";
+/* 더보기 뮤지컬 css - more_exh.css */
+
+/* 리셋, 코아, 커먼 공통 외부CSS 합치기 */
+@import url(./reset.css);
+@import url(./core.css);
+@import url(./common.css);
+/* 그리드 12 불러오기 */
+@import url(./grid_12_flex.css);
+
+
+/********************************* 1. 상단영역 *********************************/
+/* 상단메뉴 - 공통 CSS : common.css에 넣음 */
+/* .top-area{
+    height: 100px;
+} */
+.top-btn img{
+  opacity: 0;
+}
+  
+
+  /* 뮤지컬이랑 전시회 더보기 메뉴 체인지 버튼 */
+  .more-change-menu{
+    position: fixed;
+    top: 40%;
+    /* right: 10%; */
+    right: max(0%, 10%);
+    z-index: 2;
+  }
+  .more-change-menu li{
+    padding-bottom: 4rem;
+  }
+
+  
+  .more-change-menu li button{
+    padding: 10px;
+
+    color: #ffffff9e;
+    font-size: 2.7rem;
+    
+    background-color:#c8c8ce9e;
+    
+    border-radius: 50%;
+    border: none;
+
+    cursor: pointer;
+  }
+  
+  .more-change-menu li:nth-child(2) button{
+    color: white;
+    background-color:#b559fb;
+  }
+
+  .more-change-menu button:hover{
+    color: white;
+    background-color: #b559fb;
+    transition: .3s;
+  }
+
+  .more-change-menu li:nth-child(1)::after{
+    content: '뮤지컬';
+    position: absolute;
+    color: #ffffff9e;
+    top: 30%;
+    left: 50%;
+    width: 100%;
+    font-size: 1.5rem;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+
+  }
+
+  .more-change-menu li:nth-child(2)::after{
+    content: '전시회';
+    position: absolute;
+    color: #b559fb;
+    bottom: 8%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: bold;
+  }
+
+  .more-change-menu button:hover{
+    color: white;
+    background-color: #b559fb;
+    transition: .3s;
+  }
+
+
+/********************************* .5 공통영역 *********************************/
+.more-area{
+  padding: 0 10%;
+}
+
+.more-list-area a{
+display: block;
+width: 100%;
+height: 100%;
+}
+
+
+/********************************* 2. 메뉴영역 *********************************/
+.more-menu-area{
+  position: relative;
+  height: 250px;
+  
+  top: 40%;
+  left: 50%;
+  /* 중앙정렬 */
+  transform: translateX(-50%);
+
+  margin-bottom: 50px;
+
+}
+.more-menu-area ol{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px 20px;
+
+  white-space: nowrap;
+
+  /* outline: 2px dashed #222; */
+  font-size: min(30px,max(20px,2vw));
+}
+.more-menu-area li:nth-child(1){
+  font-family: "Gasoek One", sans-serif;
+  line-height: 26px;
+  font-weight: 300;
+  color: white;
+}
+.more-menu-area li{
+cursor: pointer;
+
+font-family: "Black Han Sans", sans-serif;
+font-weight: 300;
+color: rgba(255, 255, 255, 0.437);
+}
+.more-menu-area li:hover{
+font-family: "Gasoek One", sans-serif;
+line-height: 26px;
+font-weight: 300;
+color: #9a2dfaa1;
+}
+
+/********************************* 3. 리스트영역 *********************************/
+
+.more-list-area ul {
+display: flex;
+flex-wrap: wrap;
+gap: 20px 25px;
+justify-content: center;
+
+}
+
+
+/* 카드뒤집기 */
+.more-list-area .card-wrap{
+position: relative;
+
+/* width: 300px; */
+width: 300px;
+height: 400px;
+
+transform: rotateY(0deg);
+transition: transform .5s;
+
+transform-style: preserve-3d;
+
+}
+
+.more-list-area .card{
+position: absolute;
+top: 0;
+left: 0;
+
+
+backface-visibility: hidden;
+cursor: pointer;
+
+
+}
+
+.more-list-area img{
+border-radius: 5%;
+transform: translateZ(1px);
+
+}
+
+
+/* 이미지 리스트 정보 */
+.msc-list-info{
+width: 100%;
+height: 100%;
+padding: 20px;
+
+box-sizing: border-box;
+color: white;
+
+transform-style: preserve-3d;
+word-break: keep-all;
+
+/* 여기부터 클릭시 */
+background-color: #9a2dfae7;
+border-radius: 5%;
+
+
+transform:  rotateY(180deg);
+}
+
+/* 오버시 */
+.more-list-area li:hover .card-wrap .card{
+box-shadow: 0 0 10px #a93bfa;
+
+} 
+
+.more-list-area li:hover .card-wrap{
+transform: rotateY(180deg);
+}
+
+
+
+.msc-list-info strong{
+font-size: 3rem;
+max-height: 50px;
+font-weight: 300;
+
+font-family: "Black Han Sans", sans-serif;
+
+}
+
+.msc-list-info p{
+font-size: 13px;
+font-weight: 300;
+font-family: "Noto Sans KR", sans-serif;
+
+line-height: 25px;
+/* letter-spacing: -0.5px; */
+
+margin-top: 21px;
+opacity: 0.6;
+}
+
+.msc-list-info span{
+font-size: 17px;
+max-height: 50px;
+font-weight: bold;
+}
+.more-list-area li:nth-child(15) span{
+letter-spacing: -1px;
+}

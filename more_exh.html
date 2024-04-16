@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>더보기 전시회 페이지</title>
+    <link rel="stylesheet" href="./css/more-exh.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <script src="./JS/more.js" defer></script>
+  </head>
+  <body class="scbar">
+    <!-- 1. 상단영역 -->
+    <div id="top-area">
+      <header class="top-area">
+        <!-- <h2>상단 영역- 메뉴넣을</h2> -->
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="#main-area" onclick="location.href='main.html'">HOME</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <a href="#" class="moreExh-top-btn top-btn">
+        <img src="./img/btn_page_top.png" alt="탑버튼" />
+      </a>
+
+      <nav class="more-change-menu">
+        <ul>
+          <li>
+            <button
+              class="change-menu-msc"
+              onclick="location.href='more_msc.html'"
+            >
+              <i class="fa-solid fa-masks-theater"></i>
+            </button>
+          </li>
+          <li>
+            <button
+              class="change-menu-exh"
+              onclick="location.href='more_exh.html'"
+            >
+              <i class="fa-solid fa-panorama"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="more-area">
+      <!-- 2. 메뉴영역 -->
+      <div id="more-menu-area">
+        <section class="more-menu-area part">
+          <ol>
+            <li>전체</li>
+            <li>요즘HOT</li>
+            <li>전시회</li>
+            <li>뮤지엄</li>
+            <li>행사/축제</li>
+          </ol>
+        </section>
+      </div>
+
+      <!-- 3. 리스트영역 -->
+      <div id="more-list-area">
+        <section class="more-list-area part">
+          <ul>
+            <li>
+              <div class="card-wrap">
+                <img
+                  class="card"
+                  src="./img/exh/poster_exh_img_1.jpg"
+                  alt="이경준 사진전: 원 스텝 어웨이 포스터"
+                />
+                <div class="msc-list-info card">
+                  <strong>ONE STEP AWAY</strong>
+                  <p>
+                    <span>POINT 1. 시야는 넓게, 고민은 가볍게</span>
+                    <br /><br />
+                    <span>POINT 2. 모두가 주인공인 작품</span>
+                    <br /><br />
+                    <span>POINT 3. 회색 세상에서 발견한 다채로운 색감</span>
+                    <br /><br />
+                    - 뉴욕 기반의 포토그래퍼 "이경준"
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card-wrap">
+                <img
+                  class="card"
+                  src="./img/exh/poster_exh_img_2.jpg"
+                  alt="스튜디오 지브리 애니메이션의 거장 타카하타 이사오展 포스터"
+                />
+
+                <div class="msc-list-info card">
+                  <strong>타카하타 이사오展</strong>
+                  <p>
+                    <span>Section 1.</span><br />
+                    역사의 시작 : 애니메이션에 대한 열정 <br />
+                    <span>Section 2.</span><br />
+                    새로운 영역 개척 : TV명장시리즈 <br />
+                    <span>Section 3.</span><br />
+                    일본문화를 바라보다 : 스튜디오 지브리<br />
+                    <span>Section 4.</span><br />
+                    애니메이션의 새로운 표현 영역 개척
+                    <br /><br />
+                    - 애니메이션의 거장 "타카하나 이사오"
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card-wrap">
+                <img
+                  class="card"
+                  src="./img/exh/poster_exh_img_3.jpg"
+                  alt="스웨덴국립미술관 컬렉션 포스터"
+                />
+                <div class="msc-list-info card">
+                  <strong>새벽부터 황혼까지</strong>
+                  <p>
+                    <span>제 1장. 혁신의 새벽</span><br />
+                     The Dawn Of Innovation<br />
+                    <span>제 2장. 자유의 정오</span><br />
+                     The Noon Of Freedom<br />
+                    <span>제 3장. 거대한 황혼</span><br />
+                    The Monumental Twilight<br />
+                    <span>제 4장. 아늑한 빛</span><br />
+                    The Cozy Light
+                    <br /><br />
+                    - 19세기 후반 스웨덴 "인상주의" 예술가
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-wrap">
+                <img
+                  class="card"
+                  src="./img/exh/poster_exh_img_4.jpg"
+                  alt="베르나르 뷔페-천재의 빛: 광대의 그림자 포스터"
+                />
+                <div class="msc-list-info card">
+                  <strong>천재의 빛: 광대의 그림자</strong>
+                  <p>
+                    <span>제 1장.</span><br />
+                    <span>혁신의 새벽</span> <br />
+                    <span>제 2장.</span><br />
+                    <span>자유의 정오</span> <br />
+                    <span>제 3장.</span><br />
+                    <span>거대한 황혼</span><br />
+                    <span>제 4장.</span><br />
+                    <span>아늑한 빛</span>
+                    <br /><br />
+                    - 19세기 후반 스웨덴 "인상주의" 예술가
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-wrap">
+                <img
+                  class="card"
+                  src="./img/exh/poster_exh_img_5.jpg"
+                  alt="이솝이야기 포스터"
+                />
+                <div class="msc-list-info card">
+                  <strong
+                    >진심을 전하는 이야기는 마음속에 꼭 흐르고 닿는다.</strong
+                  >
+                  <p>
+                    아주 먼 옛날, 2600년도 더 된 아득한 옛날의 그리스 사모스섬.
+                    <br />
+                    이 아름다운 섬에는 언제나 이야기가 흐르고 있다.
+                    <br />
+                    아주 오래전에 태어나 지금까지도 우리들 마음에 닿아 곁에
+                    머무르며 반짝이는 이야기들에 대한 이야기
+                    <br /><br />
+                    <span>"꼭 돌아올게. 어떻게 해서든."</span>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-wrap">
+                <img
+                  class="card"
+                  src="./img/exh/poster_exh_img_6.jpg"
+                  alt="디아길레프 포스터"
+                />
+                <div class="msc-list-info card">
+                  <strong>발레뤼스를 대표하는 천재들의 이야기!</strong>
+                  <p>
+                    발레 역사상 가장 혁신적이었던 발레단 '발레뤼스'
+                    <br />
+                    그리고 그 '발레뤼스'를 만들어 낸 디아길레프
+                    <br />
+                    같은 사건을 바로보는 다른 시점! 뮤지컬&lt;니진스키&gt;를
+                    다른 시각으로 풀어내다.
+                    <br /><br />
+                    <span
+                      >Part2. 모던 발레를 확립한 불멸의 제작자
+                      '디아길레프'</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-wrap">
+                <img
+                  class="card"
+                  src="./img/exh/poster_exh_img_7.jpg"
+                  alt="오즈 포스터"
+                />
+                <div class="msc-list-info card">
+                  <strong>"안녕하세요, 오늘은 기분이 어떠신가요?"</strong>
+                  <p>
+                    많은 일자리들이 인공지능으로 대체된 2045년.
+                    <br />
+                    사람 하나 없는 무인 VR기기 공장에서 유일한 인간 노동자, 준.
+                    <br />
+                    접속하지 않는 자신의 유저를 기다리는
+                    가상현실게임&lt;오즈&gt;의 AI 양철.
+                    <br /><br />
+                    <span
+                      >스토리모드의 끝의 도달한 둘은 원하는 소원을 이룰 수
+                      있을까?</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-wrap">
+                <img
+                  class="card"
+                  src="./img/exh/poster_exh_img_8.jpg"
+                  alt="그레이트 코멧 포스터"
+                />
+                <div class="msc-list-info card">
+                  <strong
+                    >관객과 한층 더 가깝게 호흡하는 이머시스 뮤지컬!</strong
+                  >
+                  <p>
+                    무대와 객석, 배우와 연주자 경계를 허무는 혁신적인 구성!
+                    <br />
+                    매혹적인 경험을 선사하는 눈을 뗄 수 없는 황홀한 무대!
+                    <br />
+                    다채로운 음악으로 가득채운 성스루(sung-through) 뮤지컬!
+                    <br /><br />
+                    <span
+                      >벅차오르는 감정을 느끼며, 나아간다.<br />
+                      새로운 삶을 향해.</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-wrap">
+                <img
+                  class="card"
+                  src="./img/exh/poster_exh_img_9.jpg"
+                  alt="브론테 포스터"
+                />
+                <div class="msc-list-info card">
+                  <strong>"우리 글이 우리에게 자유를 선물해 줄거야."</strong>
+                  <p>
+                    단지 글을 쓰는 '여성'이라는 것만으로 수많은 어려움을
+                    감내해야만 했던,
+                    <br />
+                    그들이 활자로 담고 싶었던 이야기는 무엇일까?
+                    <br /><br />
+                    치열했던 삶 속에서 끝끝내 작가가 되고자 했던 브론테 자매.
+                    <br /><br />
+                    <span>그들은 마침내 원하던 미래를 얻게 될까?</span>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-wrap">
+                <img
+                  class="card"
+                  src="./img/exh/poster_exh_img_10.jpg"
+                  alt="파가니니 포스터"
+                />
+                <div class="msc-list-info card">
+                  <strong>신의 축복인가, 악마의 저주인가?</strong>
+                  <p>
+                    '락 클래식'으로 재탄생 된 파가니니 명곡!
+                    <br />
+                    한 순간도 놓칠 수 없는 역동적인 퍼포먼스와 폭발적인 무대!
+                    <br /><br />
+                    파가니니를 둘러싼 소문의 진실
+                    <br />
+                    "신의 축복인가, 악마의 저주인가?"
+                    <br /><br />
+                    <span>"비르투오소 파가니니의 마지막 연주가 시작된다."</span>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-wrap">
+                <img
+                  class="card"
+                  src="./img/exh/poster_exh_img_11.jpg"
+                  alt="일 테노레 포스터"
+                />
+                <div class="msc-list-info card">
+                  <strong>나의 일 테노레. 피날레를 불러줘</strong>
+                  <p>
+                    일제강점기 경성. 항일운동 모임인 '문학회' 멤버들은 뜻하지
+                    않게 이탈리아 오페라 공연을 계획한다.
+                    <br />
+                    침략에 맞서 싸우는 베네치아 사람들을 주인공으로 한 'I
+                    Sognatori - 꿈꾸는 자들'
+                    <br />
+                    이 낯선 '서양 창극'을 공연하기 위해 뭉치는 사람들.
+                    <br /><br />
+                    <span>'조선 최초 오페라'는 무사히 공연될 수 있을까?</span>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-wrap">
+                <img
+                  class="card"
+                  src="./img/exh/poster_exh_img_12.jpg"
+                  alt="싯다르타 포스터"
+                />
+                <div class="msc-list-info card">
+                  <strong
+                    >태자, 죽음의 고행과 정진으로 깨달음을 찾아 나서다</strong
+                  >
+                  <p>
+                    어느날, 싯다르타는 한 가난한 백성과의 대화를 통해 늙고
+                    병들어짐과 죽음을 목격하게 된다.
+                    <br />
+                    "왜 인간은 늙고 병들고 죽는가, 그 고통에서 어떻게
+                    벗어나는가"
+                    <br />
+                    부귀한 삶을 버리고 싯다르타의 깨달음을 찾아가는 6년의 여정
+                    <br /><br />
+                    <span>싯다르타, Siddhartha(성취한 자)</span>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-wrap">
+                <img
+                  class="card"
+                  src="./img/exh/poster_exh_img_13.jpg"
+                  alt="인사이드 월리엄 포스터"
+                />
+                <div class="msc-list-info card">
+                  <strong>통제불가 캐릭터, 엉켜버린 플롯, 달라진 장르?!</strong>
+                  <p>
+                    원고 밖으로 나온 캐릭터들과 이들을 통제 못하는 '셰익스피어'
+                    <br />
+                    셰익스피어도 상상 못했을 명작 탄생 비하인드!
+                    <br /><br />
+                    <span>"명작이 아니어도 괜찮잖아."</span>
+                    <br /><br />
+                    <span>특별하지 않아도 소중한 '나'의 이야기</span>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-wrap">
+                <img
+                  class="card"
+                  src="./img/exh/poster_exh_img_14.jpg"
+                  alt="써니텐 포스터"
+                />
+                <div class="msc-list-info card">
+                  <strong>그 시절, 빛났던 청춘의 반짝임을 소환하라!</strong>
+                  <p>
+                    혜영의 유학 허락과 함께 주어진 아빠의 조건, 소개팅!
+                    <br />
+                    방송을 위해 국장님이 준호에게 제안한 딜.
+                    <br /><br />
+                    <span>기한은 단 10일!</span>
+                    <br /><br />
+                    <span>10일 안에 차여야만해!</span><br />
+                    <span>10일 안에 사로잡아야만 해!</span>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-wrap">
+                <img
+                  class="card"
+                  src="./img/exh/poster_exh_img_15.jpg"
+                  alt="비아 에어 메일 포스터"
+                />
+                <div class="msc-list-info card">
+                  <strong>이 밤, 날 찾아줘</strong><br />
+                  <strong>또 다시 돌아갈 수 있게</strong>
+                  <p>
+                    우리는 각자의 조종간을 잡고 있는거야.
+                    <br />
+                    당신은 연주하고, 나는 하늘을 날고. 항상 같은 순간. 디어 마이
+                    로즈.
+                    <br />
+                    파비앙과 로즈는 꿈꾸던 야간 비행을 함께 할 수 있을까?!
+                    <br /><br />
+                    <span>"사랑하는 사람이 멀리서 눈 감는 순간, </span><br />
+                    <span>
+                      그 사실을 까맣게 모르는 나는 어떤 노래를 부르고
+                      있을까"</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-wrap">
+                <img
+                  class="card"
+                  src="./img/exh/poster_exh_img_16.jpg"
+                  alt="버지니아 울프 포스터"
+                />
+                <div class="msc-list-info card">
+                  <strong>허구와 실재, 그 사이에 쓰여진 이야기</strong>
+                  <p>
+                    펜 끝에서 시작된 또 하나의 세상.
+                    <br />
+                    내가 만든 세상 속에 내가 존재한다면?
+                    <br /><br />
+                    20세기를 대표하는 모더니즘 작가 버지니아 울프, 그녀의 문장과
+                    삶의 이면에서 시작된 이야기
+                    <br /><br />
+                    <span>그 어떤 결말이라도, 나의 의지로.</span>
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+    <!-- <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
+    /> -->
+    <title>1차프로젝트</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <script src="./JS/index.js" defer></script>
+  </head>
+  <body class="scbar">
+    <!-- 1. 상단영역 -->
+    <div id="top-area">
+      <header class="top-area">
+        <!-- <h2>상단 영역- 메뉴넣을</h2> -->
+        <nav class="menu">
+          <ul>
+            <li>
+              <a class="on" href="#main-area">HOME</a>
+            </li>
+            <li>
+              <a href="#msc-area">MUSICAL</a>
+            </li>
+            <li>
+              <a href="#exh-area">EXHIBIT</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <a href="#" class="main-top-btn top-btn">
+        <img src="./img/btn_page_top.png" alt="탑버튼" />
+      </a>
+    </div>
+
+    <!-- 2. 메인영역 -->
+    <main id="main-area" class="cont">
+      <section class="main-area part">
+
+        <div class="main-wrap cont">
+
+          
+        <!-- 메인이미지 -->
+        <div class="main-img-part">
+          <section class="main-tit-img">
+            <img src="./img/poster_msc_img_12.jpg" alt="">
+            <img src="./img/poster_msc_img_16.jpg" alt="">
+            <img src="./img/exh/poster_exh_img_13.jpg" alt="">
+            <img src="./img/exh/poster_exh_img_2.jpg" alt="">
+            <img src="./img/poster_msc_img_18.jpg" alt="">
+            <!-- <img src="./img/object_item.png" alt="메인 이미지" /> -->
+          </section>
+        </div>
+        
+        <!-- 타이틀 -->
+        <div class="main-tit-area">
+          <!-- 클릭시 영상 -->
+          <div class="screen">
+            <iframe
+              class="ifr"
+              src="https://www.youtube.com/embed/WixdTHZYU7Y?autoplay=1&mute=1&loop=1&playlist=WixdTHZYU7Y&"
+              allow="autoplay"
+            >
+            </iframe>
+            <iframe
+              class="ifr"
+              src="https://www.youtube.com/embed/0Z2_08ryoQc?autoplay=1&mute=1&loop=1&playlist=0Z2_08ryoQc"
+              allow="autoplay"
+            >
+            </iframe>
+          </div>
+
+          <!-- 배경 타이틀 -->
+          <div class="back-title">
+            <dt>MUSICAL</dt>
+            <dt>EXHIBIT</dt>
+          </div>
+          
+
+          <!-- 메인타이틀 -->
+          <div class="main-flaot">
+            <dl class="main-tit">
+              <dt><span>MUSICAL</span></dt>
+              <dt><b>&</b><span> EXHIBIT</span></dt>
+              <!-- &ensp;  -->
+              <dd id="sub-tit">꿈같은 공간에서 펼쳐지는 아름다운 이야기</dd>
+            </dl>
+          </div>
+
+          <!-- 메인 이미지 -->
+          <!-- <div class="main-img col-7">
+            <section class="main-img-1 main-img-part">
+              <ul>
+                <li>
+                  <img src="./img/poster_msc_img_11.jpg" alt />
+                </li>
+                <li>
+                  <img src="./img/poster_msc_img_15.jpg" alt />
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <img src="./img/poster_msc_img_7.jpg" alt />
+                </li>
+                <li>
+                  <img src="./img/poster_msc_img_5.jpg" alt />
+                </li>
+              </ul>
+            </section>
+            <section class="main-img-2 main-img-part">
+                <ul>
+                  <li>
+                    <img src="./img/exh/poster_exh_img_5.jpg" alt />
+                  </li>
+                  <li>
+                    <img src="./img/exh/poster_exh_img_9.jpg" alt />
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <img src="./img/exh/poster_exh_img_2.jpg" alt />
+                  </li>
+                  <li>
+                    <img src="./img/exh/poster_exh_img_4.jpg" alt />
+                  </li>
+                </ul>
+              </section>     
+          </div> -->
+        </div>
+
+      </div>
+      </section>
+    </main>
+
+    <!-- 3. 뮤지컬영역 -->
+    <div id="msc-area" class="cont">
+      <section class="msc-area part ME-part">
+        <div class="cir"></div>
+
+        <h1>MUSICAL</h1>
+        <div class="slideShow">
+          <!-- 이미지 슬라이드 -->
+          <ul class="msc-list core-list">
+            <li>
+              <a href="#">
+                <img
+                  class="main-img"
+                  src="./img/poster_msc_img_1.jpg"
+                  alt="레미제라블포스터"
+                />
+              </a>
+              <dl>
+                <dt>레미제라블</dt>
+                <dd>계명아트센터</dd>
+                <dd>2024.03.21 ~ 2024.04.07</dd>
+              </dl>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="main-img"
+                  src="./img/poster_msc_img_6.jpg"
+                  alt="이솝이야기 포스터"
+                />
+                <dl>
+                  <dt>이솝이야기</dt>
+                  <dd>충무아트센터 중극장 블랙</dd>
+                  <dd>2024.02.16 ~ 2024.04.14</dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="main-img"
+                  src="./img/poster_msc_img_9.jpg"
+                  alt="그레이트코멧 포스터"
+                />
+                <dl>
+                  <dt>그레이트 코멧</dt>
+                  <dd>유니버설아트센터</dd>
+                  <dd>2024.03.26 ~ 2024.06.16</dd>
+                </dl>
+              </a>
+            </li>
+            <li class="on">
+              <a href="#">
+                <img
+                  class="main-img"
+                  src="./img/poster_msc_img_10.jpg"
+                  alt="브론테 포스터"
+                />
+                <dl class="on">
+                  <dt>브론테</dt>
+                  <dd>링크아트센터드림 드림1관</dd>
+                  <dd>2024.03.04 ~ 2024.06.02</dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="main-img"
+                  src="./img/poster_msc_img_7.jpg"
+                  alt="디아길레프 포스터"
+                />
+                <dl>
+                  <dt>디아길레프</dt>
+                  <dd>예스24아트원 1관</dd>
+                  <dd>2024.03.19 ~ 2024.06.09</dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="main-img"
+                  src="./img/poster_msc_img_16.jpg"
+                  alt="데미안 포스터"
+                />
+                <dl>
+                  <dt>데미안</dt>
+                  <dd>링크아트센터드림 드림4관</dd>
+                  <dd>2024.04.08 ~ 2024.06.30</dd>
+                </dl>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="main-img"
+                  src="./img/poster_msc_img_12.jpg"
+                  alt="일 테노레 (IL TENORE) 포스터"
+                />
+                <dl>
+                  <dt>일 테노레 (IL TENORE)</dt>
+                  <dd>블루스퀘어 신한카드홀</dd>
+                  <dd>2024.03.29 ~ 2024.05.19</dd>
+                </dl>
+              </a>
+            </li>
+          </ul>
+          <!-- 버튼 -->
+          <section class="msc-btn main-pg-btn">
+            <div class="pass-btn">
+              <button
+                type="button"
+                value="왼쪽"
+                id="msc-left-pass-btn"
+                class="main-btn pbtn fa-solid fa-circle-left"
+              >
+              </button>
+              <button
+                type="button"
+                id="msc-more-btn"
+                class="main-btn more-btn"
+                onclick="location.href='more_msc.html'"
+              >
+                더보기
+              </button>
+              <button
+                type="button"
+                value="오른쪽"
+                id="msc-right-pass-btn"
+                class="main-btn pbtn right-btn fa-solid fa-circle-right"
+              >
+              </button>
+            </div>
+          </section>
+        </div>
+        <!-- 슬라이드 쇼 div -->
+        
+        <!-- 배경이미지 박스 -->
+        <div class="backImg">
+          <ul id="msc-back-img"class="sub-back-img">
+          </ul>
+      </section>
+
+
+      </div>
+    </div>
+
+    <!-- 4. 전시회영역 -->
+    <div id="exh-area" class="cont">
+      <section class="exh-area part ME-part">
+        <div class="cir"></div>
+        <h1>EXHIBIT</h1>
+        <div class="slideShow">
+        <ul class="exh-list core-list">
+          <li>
+            <a href="#">
+              <img
+                class="main-img"
+                src="./img/exh/poster_exh_img_14.jpg"
+                alt="GIFT Vol.2 : 소만, 어딘가의 창포스터"
+              />
+            </a>
+            <dl>
+              <dt>GIFT Vol.2 : 소만, 어딘가의 창</dt>
+              <dd>KT&amp;G 상상마당 부산 갤러리</dd>
+              <dd>2024.03.15 ~ 2024.04.16</dd>
+            </dl>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="main-img"
+                src="./img/exh/poster_exh_img_1.jpg"
+                alt="이경준 사진전: 원 스텝 어웨이 포스터"
+              />
+              <dl>
+                <dt>이경준 사진전: 원 스텝 어웨이</dt>
+                <dd>그라운드시소 센트럴</dd>
+                <dd>2023.10.27 ~ 2024.09.18</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="main-img"
+                src="./img/exh/poster_exh_img_6.jpg"
+                alt="반고흐 인서울 포스터"
+              />
+              <dl>
+                <dt>반고흐 인 서울</dt>
+                <dd>띠아트 홍대</dd>
+                <dd>2024.04.01 ~ 2024.04.30</dd>
+              </dl>
+            </a>
+          </li>
+          <li class="on">
+            <a href="#">
+              <img
+                class="main-img"
+                src="./img/exh/poster_exh_img_7.jpg"
+                alt="모네인사이드 포스터"
+              />
+              <dl class="on">
+                <dt>모네 인사이드</dt>
+                <dd>그라운드시소 명동</dd>
+                <dd>2024.02.21 ~ 2024.04.30</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="main-img"
+                src="./img/exh/poster_exh_img_3.jpg"
+                alt="스웨덴국립미술관 컬렉션 : 새벽부터 황혼까지 포스터"
+              />
+              <dl>
+                <dt>새벽부터 황혼까지</dt>
+                <dd>마이아트뮤지엄</dd>
+                <dd>2024.03.21 ~ 2024.08.25</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="main-img"
+                src="./img/exh/poster_exh_img_12.jpg"
+                alt="까르띠에, 시간의 결정 포스터"
+              />
+              <dl>
+                <dt>까르띠에, 시간의 결정</dt>
+                <dd>DDP 아트홀1, 컨퍼런스 홀</dd>
+                <dd>2024.05.01 ~ 2024.06.30</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="main-img"
+                src="./img/exh/poster_exh_img_11.jpg"
+                alt="앨리스: 인투 더 뉴월드 포스터"
+              />
+              <dl>
+                <dt>앨리스: 인투 더 뉴월드</dt>
+                <dd>그라운드시소 명동</dd>
+                <dd>2024.01.10 ~ 오픈런</dd>
+              </dl>
+            </a>
+          </li>
+        </ul>
+        <!-- 버튼 -->
+        <section class="exh-btn main-pg-btn">
+          <div class="pass-btn">
+            <button
+              type="button"
+              value="왼쪽"
+              id="exh-left-pass-btn"
+              class="main-btn pbtn fa-solid fa-circle-left"
+            >
+            </button>
+            <button
+              type="button"
+              value="더보기"
+              class="main-btn more-btn"
+              id="exh-more-btn"
+              onclick="location.href='more_exh.html'"
+            >
+              더보기
+            </button>
+            <button
+              type="button"
+              value="오른쪽"
+              id="exh-right-pass-btn"
+              class="main-btn pbtn right-btn fa-solid fa-circle-right"
+            >
+            </button>
+          </div>
+        </section>
+        
+      </div>
+      <!-- 슬라이드 쇼 div -->
+
+      <!-- 배경이미지 박스 -->
+      <div class="backImg">
+        <ul id="exh-back-img" class="sub-back-img">
+
+        </ul>
+
+      </section>
+
+
+
+    </div>
+  </body>
+</html>
